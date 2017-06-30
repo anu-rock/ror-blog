@@ -1,0 +1,4 @@
+<div class="row medium-8 large-7 columns">
+    <% @articles.each do |article| %>
+      <%= render 'single', :article => article %>
+    <% end %>
