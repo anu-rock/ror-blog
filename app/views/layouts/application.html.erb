@@ -8,6 +8,7 @@
         <title>Anurag Bhandari | Blog</title>
         <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel='stylesheet' type='text/css'>
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
         <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
         <%= yield :stylesheets %>
     </head>
@@ -43,6 +44,47 @@
         </div>
 
         <%= yield %>
+
+        <footer class="responsive-blog-footer">
+            <div class="row">
+                <div class="medium-8 columns small-order-2 medium-order-1 about-container">
+                    <div class="row">
+                        <div class="hide-for-small-only medium-2 columns about-section">
+                            <img width="100"
+                              src="https://avatars3.githubusercontent.com/u/1288616?v=3&s=400">
+                        </div>
+                        <div class="medium-10 columns about-section">
+                            <h4>
+                                About Me</h4>
+                            <p>Technologist. Open source evangelist. Software developer.
+                              Science fiction buff. Sports fan. Bookworm. Gamer.
+                              Gadget freak. Philatelist.</p>
+                            <a href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="small-12 medium-4 columns small-order-1 medium-order-2 mailing-container">
+                    <h4 class="mailing-list">Follow me <small>at your own risk</small></h4>
+                    <a class="button" href="https://www.linkedin.com/in/anuragbhandari/">
+                      <i class="fi-social-linkedin medium"></i></a>
+                    <a class="button" href="https://twitter.com/anuragbhandari">
+                      <i class="fi-social-twitter medium"></i></a>
+                    <a class="button" href="https://github.com/anuragbhd">
+                      <i class="fi-social-github medium"></i></a>
+                    <a class="button" href="http://steamcommunity.com/id/i-am-game/">
+                      <i class="fi-social-steam medium"></i></a>
+                </div>
+            </div>
+            <div class="row columns flex-container align-justify">
+                <p>
+                    (copyleft) no rights reserved</p>
+                <div class="up-arrow">
+                    <a href="#top">
+                        <i class="fa fa-chevron-circle-up" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
 
         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>

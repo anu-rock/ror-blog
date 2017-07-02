@@ -5,6 +5,12 @@ class ArticlesController < ApplicationController
   # GET all articles
   def index
     @articles = Article.all.order 'created_at desc' # instance variables are passed to the view
+
+    respond_to do |format|
+      # order matters
+      format.json { render json: @articles }
+      format.html #index.html.erb
+    end
   end
 
   def new
@@ -21,6 +27,12 @@ class ArticlesController < ApplicationController
   def show
     @article = Article.find(params[:id]) # instance variables are passed to the view
     @comment = Comment.new
+
+    respond_to do |format|
+      # order matters
+      format.json { render json: @article, include: [:comments] }
+      format.html # show.html.erb
+    end
   end
 
   # POST request from "new" form will come here
