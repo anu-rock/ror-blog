@@ -6,7 +6,7 @@ A very simple blogging web app created as part of my mission to learn [Ruby](htt
 
 Quite intentionally, it only supports creating new blog entries (articles), editing and deleting them, and adding comments to articles. Plus, it restricts access to creating / editing / deleting articles through HTTP basic authentication.
 
-The blog also exposes API endpoints to get data.
+The blog also exposes API endpoints to get (JSON) data.
 * /articles - gives you the complete list of articles
 * /articles/:id - gives you a specific article by id (including all its comments)
 
@@ -30,7 +30,7 @@ I was not attracted to Ruby due to the adulation I had seen for it online or amo
 
 Early this year, upon recommendation of a former student, I checked out the much revered Ruby on Rails [Doctrine](http://rubyonrails.org/doctrine/). Boy, did it win me over in just one reading. Two tenets stood out to me - **Convention over Configuration** and **Optimize for programmer happiness**. Instantly, I installed Rails on my machine and created my first application, only to be later disappointed with my inability to understand much of code in the generated files.
 
-For the next few months, I did my (very) slow and steady learning of Ruby. The free online book [Learn Ruby the Hard Way](https://learnrubythehardway.org) was my best friend during this time. Last week, I switched to a higher gear and finished all Ruby basics chapters in the book and straightway jumped to Ruby on Rails once again.
+For the next few months, I did my (very) slow and steady learning of Ruby. The free online book [Learn Ruby the Hard Way](https://learnrubythehardway.org) was my best friend during this time. Last week, I switched to a higher gear and finished all Ruby basics chapters in the book and straightway jumped to Ruby on Rails once again. I found its [Getting Started](guides.rubyonrails.org/getting_started.html) guide extremely helpful.
 
 This time round, I was able to understand majority of the code. Stuff I did not understand, I googled. The things that stumped me the most, though, were those weird variable-like thingies prefixed with a colon. This [nice article](http://rubylearning.com/satishtalim/ruby_symbols.html) on Ruby symbols cleared that for me.
 
